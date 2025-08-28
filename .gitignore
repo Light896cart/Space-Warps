@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+*.exe
+*.dll
+*.dylib
+
+# Virtual environments
+venv/
+env/
+ENV/
+virtualenv/
+anaconda/
+conda/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# DVC (будет потом)
+.dvc/
+.dvc/cache/
+.dvc/config
+.dvc/state
+
+objects_with_panstarrs_types.csv
+objects_with_types.csv
+reg.csv
+spAll-v6_1_3.fits
+
+# Data and models (не коммитим!)
+/data/
+models/
+results/
+train/
+result/
+data/spare_csv/
+data/raw_data/
+image_data/
+
+# Logs
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
