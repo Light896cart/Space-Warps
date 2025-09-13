@@ -6,7 +6,7 @@ model_architecture.py
     Модель можно наследовать или модифицировать под конкретную задачу
     (классификация, регрессия, семантическая сегментация и т.д.).
 
-Автор: Senior ML Engineer
+Автор: Jubior ML Engineer
 Дата: 2025-04-05
 """
 import matplotlib.pyplot as plt
