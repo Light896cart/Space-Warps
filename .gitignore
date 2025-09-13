@@ -42,20 +42,10 @@ $RECYCLE.BIN/
 .dvc/config
 .dvc/state
 
-objects_with_panstarrs_types.csv
-objects_with_types.csv
-reg.csv
+
 spAll-v6_1_3.fits
 
 # Data and models (не коммитим!)
-/data/
-models/
-results/
-train/
-result/
-data/spare_csv/
-data/raw_data/
-image_data/
 
 # Logs
 *.log
