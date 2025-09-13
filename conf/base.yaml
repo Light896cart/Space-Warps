@@ -1,0 +1,14 @@
+# conf/base.yaml
+
+# Здесь мы указываем, какие конфиги использовать по умолчанию
+defaults:
+  - _self_
+
+# Устанавливеем seed
+seed: 42
+
+# Конфиг для данных
+data:
+  csv_path: None
+  img_dir_path: ''
+

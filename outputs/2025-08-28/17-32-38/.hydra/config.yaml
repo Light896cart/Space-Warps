@@ -1,0 +1,4 @@
+seed: 42
+data:
+  csv_path: None
+  img_dir_path: ''

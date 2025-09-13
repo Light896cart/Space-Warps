@@ -6,18 +6,21 @@ from src.model.progressive_search import progressive_architecture_search
 from src.utils.logging import summarize_progressive_growth
 from src.utils.seeding import set_seed
 
+import hydra
+from omegaconf import DictConfig, OmegaConf
 
-def main():
+# @hydra.main(config_path='conf',config_name='base',version_base=None)
+def main() -> None:
+    # path = cfg.data.path
     # 🌱 1. Воспроизводимость
     print("🔧 Устанавливаем seed для воспроизводимости...")
     set_seed(42)
-    print('hi')
     ver = r'D:\Code\Space_Warps\train'
     # 📥 2. Подготовка данных
     print("\n📥 Загружаем и разбиваем данные...")
     train_loader, val_loader = create_train_val_dataloaders(
         csv_path=None,                # использовать дефолтный путь
-        img_dir_path=ver,
+        img_dir_path=None,
         dataset=Space_Galaxi,
         train_ratio=0.9,
         fraction=0.02,                 # использовать 100% данных

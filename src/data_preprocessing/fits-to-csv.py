@@ -42,6 +42,8 @@ def lazy_create_csv_chunks(fits_filename, chunk_size=1000, output_dir='spall_csv
         # --- Поиск нужных колонок ---
         colnames = [col.name for col in hdu.columns]
 
+        print(colnames)
+
         col_mapping = {
             'id': ['SPECOBJID', 'specobjid'],
             'ra': ['PLUG_RA', 'RA', 'plug_ra', 'ra'],
